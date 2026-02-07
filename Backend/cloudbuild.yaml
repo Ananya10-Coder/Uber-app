@@ -1,0 +1,15 @@
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+steps:
+- name: gcr.io/cloud-builders/docker
+  args:
+    [
+      "build",
+      "-t",
+      "us-central1-docker.pkg.dev/test1-482614/uber-repo/uber-backend:$SHORT_SHA",
+      "."
+    ]
+
+images:
+- "us-central1-docker.pkg.dev/test1-482614/uber-repo/uber-backend:$SHORT_SHA"
