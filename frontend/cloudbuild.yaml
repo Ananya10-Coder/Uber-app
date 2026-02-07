@@ -19,9 +19,9 @@ steps:
     - -c
     - |
       echo "=== FRONTEND DIR ==="
-      ls -la Frontend
+      ls -la frontend
       echo "=== ENV FILE ==="
-      cat Frontend/.env.production || echo "MISSING ENV FILE"
+      cat frontend/.env.production || echo "MISSING ENV FILE"
 
 
 images:
