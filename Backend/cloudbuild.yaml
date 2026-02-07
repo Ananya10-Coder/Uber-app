@@ -6,9 +6,11 @@ steps:
   args:
     [
       "build",
+      "-f",
+      "backend/Dockerfile",
       "-t",
       "us-central1-docker.pkg.dev/test1-482614/uber-repo/uber-backend:$SHORT_SHA",
-      "."
+      "backend"
     ]
 
 images:
