@@ -13,5 +13,16 @@ steps:
       "frontend"
     ]
 
+- name: bash
+  entrypoint: bash
+  args:
+    - -c
+    - |
+      echo "=== FRONTEND DIR ==="
+      ls -la Frontend
+      echo "=== ENV FILE ==="
+      cat Frontend/.env.production || echo "MISSING ENV FILE"
+
+
 images:
 - "us-central1-docker.pkg.dev/test1-482614/uber-repo/uber-frontend:$SHORT_SHA"
