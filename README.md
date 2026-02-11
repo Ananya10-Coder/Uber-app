@@ -46,7 +46,7 @@ The application supports two client roles:
 ---
 
 ### Walkthrough Video  
-Quick one-minute demo: [*(insert link)*](https://drive.google.com/file/d/1AHjJCWXeXvNGfCfEuIasReHKfN4wBBPO/view?usp=drive_link)
+Quick one-minute demo: [*(video link)*](https://drive.google.com/file/d/1AHjJCWXeXvNGfCfEuIasReHKfN4wBBPO/view?usp=drive_link)
 
 ---
 
@@ -57,30 +57,30 @@ Quick one-minute demo: [*(insert link)*](https://drive.google.com/file/d/1AHjJCW
 ### User Experience
 
 | User Login | Location Search |
-|------------|-----------------|
-| ![](docs/screenshots/userHome.png) | ![](docs/screenshots/enterLoc.png) |
+|--------------|-----------------|
+| ![](docs/screenshots/userLogin.png) | ![](docs/screenshots/enterLoc.png) |
 
 | Vehicle Selection | Looking for Driver |
 |-------------------|--------------------|
-|  | ![](docs/screenshots/chooseVehicle.png) | ![](docs/screenshots/LookingForDriver.png) |
+| ![](docs/screenshots/chooseVehicle.png) | ![](docs/screenshots/LookingForDriver.png) |
 
 ### Rider Experience
 
 | Rider Signup | Ride Pop Up |
 |-------------------|--------------------|
-|  | ![](docs/screenshots/riderSignup.png) | ![](docs/screenshots/ridePopUp.png) |
+| ![](docs/screenshots/riderSignup.png) | ![](docs/screenshots/ridePopUp.png) |
 
 ### After Ride Confirmation
 
 | User Waiting for Rider | OTP verification |
 |-------------------|--------------------|
-|  | ![](docs/screenshots/WaitingForDriver.png) | ![](docs/screenshots/OTPverification.png) |
+| ![](docs/screenshots/WaitingForDriver.png) | ![](docs/screenshots/OTPverification.png) |
 
 ### Finish Ride After Payment
 
 | Make Payment & Live Tracking | Finish Ride(Rider)|
 |-------------------|--------------------|
-|  | ![](docs/screenshots/userRide.png) | ![](docs/screenshots/FinishRide.png) |
+| ![](docs/screenshots/userRide.png) | ![](docs/screenshots/FinishRide.png) |
 
 ---
 
@@ -145,6 +145,7 @@ pending → accepted → ongoing → completed
 
 ## Project Structure
 
+```bash
 backend/
 ├── controllers/
 ├── models/
@@ -152,7 +153,7 @@ backend/
 ├── services/
 ├── middlewares/
 ├── socket.js
-├── Dockerfile
+└── Dockerfile
 
 frontend/
 ├── src/
@@ -160,9 +161,10 @@ frontend/
 ├── pages/
 ├── context/
 ├── Dockerfile
-├── nginx.conf
+└── nginx.conf
 
 docker-compose.yaml
+```
 
 ---
 
@@ -172,13 +174,15 @@ docker-compose.yaml
 
 ### Run with Docker (Recommended)
 
+```bash
 git clone https://github.com/Ananya10-Coder/Uber-app
 cd Uber-app
 docker compose up --build
+```
 
 Application URLs:
-Frontend → http://localhost:5173  
-Backend  → http://localhost:4000  
+- Frontend → http://localhost:5173  
+- Backend  → http://localhost:4000  
 
 ---
 
@@ -186,16 +190,18 @@ Backend  → http://localhost:4000
 
 Backend
 
+```bash
 cd backend
 npm install
 npm start
-
+```
 frontend
 
-cd frontend
+```bash
+cd backend
 npm install
 npm run dev
-
+```
 ---
 
 ### Environment Variables
